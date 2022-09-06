@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestApp</string>
+
+    <string name="info_fragment_fname">First name: </string>
+    <string name="info_fragment_lname">Last name: </string>
+    <string name="info_fragment_age">Age: </string>
+    <string name="info_fragment_symptom">First symptom: </string>
+    <string name="info_fragment_ins_num">Insurance number: </string>
+    <string name="button_text">Accept</string>
+    <string name="medical_insurance">Medical Insurance</string>
+
+</resources>
