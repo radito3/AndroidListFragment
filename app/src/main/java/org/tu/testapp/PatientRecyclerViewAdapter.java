@@ -52,16 +52,15 @@ public class PatientRecyclerViewAdapter extends RecyclerView.Adapter<PatientRecy
                 if (patient.isBeingChecked) {
                     ViewHolder patientViewHolder = itemHolders.get(patient.id);
                     if (patientViewHolder == null) {
-                        return;
+                        continue;
                     }
                     activity.runOnUiThread(() -> removeItem(patientViewHolder));
-                    if (!mValues.isEmpty()) {
-                        patient = mValues.get(0);
-                    }
+                    SleepUtil.sleep(5);
+                    continue;
                 }
                 ViewHolder patientViewHolder = itemHolders.get(patient.id);
                 if (patientViewHolder == null) {
-                    return;
+                    continue;
                 }
                 activity.runOnUiThread(() -> patientViewHolder.mContentView.setBackgroundColor(Color.YELLOW));
                 patient.isBeingChecked = true;
